@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import static org.junit.Assert.assertTrue;
 
 public class FindOverlappingTimeCardsTest {
-    DecimalFormat commaFormat = new DecimalFormat("#,###,###,###");
+    final DecimalFormat commaFormat = new DecimalFormat("#,###,###,###");
 
     @Test
     public void testFindManyOverlappingTimeCards() {

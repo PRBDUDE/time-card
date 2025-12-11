@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 
 public class SortByPunchInTest {
 
-    SortByPunchIn comp = new SortByPunchIn();
+    final SortByPunchIn comp = new SortByPunchIn();
 
     @Test
     public void testAYearBeforeBYear() {
