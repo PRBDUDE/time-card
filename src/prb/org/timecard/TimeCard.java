@@ -23,14 +23,6 @@ public class TimeCard {
         return employeeId;
     }
 
-    public int getYear() {
-        return punchIn.getYear();
-    }
-
-    public int getMonth() {
-        return punchIn.getMonthValue();
-    }
-
     /**
      *
      * @param employeeId int
