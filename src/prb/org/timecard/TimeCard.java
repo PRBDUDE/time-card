@@ -1,4 +1,4 @@
-package timecard;
+package prb.org.timecard;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
