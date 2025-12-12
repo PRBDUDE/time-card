@@ -1,13 +1,13 @@
 package prb.org.timecard;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.text.DecimalFormat;
 import java.time.DayOfWeek;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class FindOverlappingTimeCardsTest {
     final DecimalFormat commaFormat = new DecimalFormat("#,###,###,###");
