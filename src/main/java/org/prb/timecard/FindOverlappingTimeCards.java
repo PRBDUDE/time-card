@@ -35,17 +35,17 @@ public class FindOverlappingTimeCards {
     }
 
     private void findOverlappingTimeCards(
-            TreeMap<LocalDateTime, TimeCard> tCards) {
+            TreeMap<LocalDateTime, TimeCard> cardTreeMap) {
 
-        tCards.forEach((key, value) -> {
-            SortedMap<LocalDateTime, TimeCard> workCards =
-                    tCards.subMap(key, value.getPunchOut());
+        cardTreeMap.forEach((punchIn, timeCard) -> {
+            SortedMap<LocalDateTime, TimeCard> workCards = 
+                    cardTreeMap.subMap(punchIn, timeCard.getPunchOut());
 
             if (workCards.size() > 1) {
                 workCards.forEach((wKey,
                                    wValue) -> {
-                    if (key != wKey) {
-                        value.compareOverlap(wValue);
+                    if (punchIn != wKey) {
+                        timeCard.compareOverlap(wValue);
                     }
                 });
             }
