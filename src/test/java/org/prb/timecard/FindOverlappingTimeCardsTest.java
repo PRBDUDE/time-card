@@ -1,4 +1,4 @@
-package prb.org.timecard;
+package org.prb.timecard;
 
 import org.junit.jupiter.api.Test;
 
